@@ -21,6 +21,7 @@
 		org.hibernate.dialect.Oracle9Dialect
 	</property>
 	<property name="show_sql">true</property>
+	<property name="hbm2ddl.auto">update</property> <!-- 配置此处可使得hibernate自动创建序列，并且自动创建原来没有的表字段 -->
 	<mapping resource="com/ypy/pojo/TUsers.hbm.xml" />
 
 </session-factory>

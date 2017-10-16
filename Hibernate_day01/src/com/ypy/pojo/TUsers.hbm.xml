@@ -9,7 +9,7 @@
         <id name="userid" type="java.math.BigDecimal">
             <column name="USERID" precision="22" scale="0" />
             <generator class="sequence">
-            	<param name="sequence">seq_t_user</param>   <!-- 这里要自己配置具体是哪个序列 -->
+            	<!-- <param name="sequence">seq_t_user</param>   这里要自己配置具体是哪个序列 -->
             </generator>
         </id>
         <property name="username" type="java.lang.String">
@@ -20,6 +20,9 @@
         </property>
         <property name="realname" type="java.lang.String">
             <column name="REALNAME" length="20" />
+        </property>
+        <property name="addr" type="java.lang.String">
+            <column name="ADDR" length="20" />
         </property>
         <property name="deptid" type="java.math.BigDecimal">
             <column name="DEPTID" precision="22" scale="0" />

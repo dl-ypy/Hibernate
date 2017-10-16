@@ -12,10 +12,18 @@ public class TUsers  implements java.io.Serializable {
 
     // Fields    
 
-     private BigDecimal userid;
+     @Override
+	public String toString() {
+		return "TUsers [userid=" + userid + ", username=" + username + ", password=" + password + ", realname="
+				+ realname + ", addr=" + addr + ", deptid=" + deptid + "]";
+	}
+
+
+	private BigDecimal userid;
      private String username;
      private String password;
      private String realname;
+     private String addr;
      private BigDecimal deptid;
 
 
@@ -76,6 +84,16 @@ public class TUsers  implements java.io.Serializable {
     public void setDeptid(BigDecimal deptid) {
         this.deptid = deptid;
     }
+
+
+	public String getAddr() {
+		return addr;
+	}
+
+
+	public void setAddr(String addr) {
+		this.addr = addr;
+	}
    
 
 
