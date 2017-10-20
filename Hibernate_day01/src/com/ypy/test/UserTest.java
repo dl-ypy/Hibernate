@@ -93,7 +93,7 @@ public class UserTest {
 	 * get与load方法的区别：
 	 * 1.当无要查询的记录时，get会返回null，load会报错。
 	 * 2.不管查询对象是否被使用，get方法都会执行查询语句，load方法是只有查询对象被使用时，才会调用sql语句。
-	 *   即load方法会延时加载。
+	 *   即load方法会延迟加载。
 	 */
 	@Test
 	public void get() {
